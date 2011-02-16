@@ -1,0 +1,32 @@
+#page-content h1 {
+    font-size: 24px;
+	line-height: 26px;
+	color: #333;
+	font-style: italic;
+	font-family: georgia;
+	margin-bottom: 1em;
+}
+strong {
+    font-weight: bold;
+}
+
+dt {
+    font-size: 18px;
+    color: #333;
+    font-family: georgia;
+    font-style: italic;
+}
+dd {
+    font-size: 16px;
+    color: #666;
+    font-family: georgia;
+    margin: 0.5em 0 2em;
+    line-height: 20px;
+}
+.metadata {
+    font-family: georgia;
+    font-style: italic;
+    color: #666;
+    text-align: right;
+    font-size: 12px;
+}
