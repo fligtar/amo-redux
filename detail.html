@@ -1,21 +1,12 @@
-<!DOCTYPE html>
-<html class="detail-page">
+---
+layout: common
+title: "Add-on Title :: Firefox Add-ons"
+page-class: detail-page
+breadcrumbs: true
+---
 
-<script type="text/javascript">
-	document.documentElement.className += ' js';
-</script>
-
-<head>
-	<title>Add-on Detail :: Firefox Add-ons</title>
-	<link rel="stylesheet" href="static/reset.min.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="static/style.css" type="text/css" media="screen" />
-</head>
-
-<body>
-
-
-<div id="proto-controls">
-	<div class="floating">
+<div id="proto-controls" class="initial">
+	<div class="floating"><div>
 		Show:
 		<a href="#" data-class="incompatible">Incompatible</a>
 		<a href="#" data-class="non-firefox">Non-Firefox</a>
@@ -24,173 +15,13 @@
 		<a href="#" data-class="contrib">Contributions</a>
 		<a href="#" data-class="no-sshots">No Screenshots</a>
 		<a href="#" data-class="first-run">First Run</a>
+		<a href="#" data-class="owner">Owner</a>
 
 		<a href="#" class="close">Close</a>
-	</div>
+	</div></div>
 	
 	<div class="fixed"></div>
 </div>
-
-
-<header id="global-header"><div class="funnel">
-	<a id="mozilla-tab" href="#">Mozilla</a>
-	
-	<div class="menu">
-		<p>
-			<a href="#">Register</a>
-			or
-			<a href="#">Log in</a>
-		</p>
-
-		<p>
-			<a href="#">Other Applications</a>
-		</p>
-</div></header>
-
-
-<header id="site-header"><div class="funnel">
-	<h1>
-		<a href="homepage.html">Add-ons <span></span></a>
-	</h1>
-	
-	<form id="site-search">
-		<input type="text" placeholder="Search for Add-ons"></input>
-		<button>Search</button>
-	</form>
-	
-	<nav id="site-nav">
-		<ul>
-			<!--
-			--><li><!--
-				--><a class="top-menu" href="#">Extensions</a><!--
-				--><ul class="submenu two-col">
-					<!--
-					--><li><a class="em" href="#">Featured</a></li><!--
-					--><li><a class="em" href="#">Most Popular</a></li><!--
-					--><li><a class="em" href="#">Top Rated</a></li><!--
-					
-					--><li><a href="#">Abstract</a></li><!--
-					--><li><a href="#">Appearance</a></li><!--
-					--><li><a href="#">Bookmarks</a></li><!--
-					--><li><a href="#">Download Management</a></li><!--
-					--><li><a href="#">Feeds, News &amp; Blogging</a></li><!--
-					--><li><a href="#">Games &amp; Entertainment</a></li><!--
-					--><li><a href="#">Language Support</a></li><!--
-					--><li><a href="#">Photos, Music &amp; Video</a></li><!--
-					--><li><a href="#">Privacy &amp; Security</a></li><!--
-					--><li><a href="#">Shopping</a></li><!--
-					--><li><a href="#">Social &amp; Communication</a></li><!--
-					--><li><a href="#">Tabs</a></li><!--
-					--><li><a href="#">Web Development</a></li><!--
-					--><li><a href="#">Other</a></li><!--
-					-->
-				   </ul><!--
-			   --></li><!--
-			--><li class="sep"></li><!--
-			--><li><!--
-				--><a class="top-menu" href="#">Personas</a><!--
-				--><ul class="submenu two-col">
-					<!--
-					--><li><a class="em" href="#">Featured</a></li><!--
-					--><li><a class="em" href="#">Most Popular</a></li><!--
-					--><li><a class="em" href="#">Top Rated</a></li><!--
-					
-					--><li><a href="#">Abstract</a></li><!--
-					--><li><a href="#">Causes</a></li><!--
-					--><li><a href="#">Fashion</a></li><!--
-					--><li><a href="#">Film and TV</a></li><!--
-					--><li><a href="#">Firefox</a></li><!--
-					--><li><a href="#">Foxkeh</a></li><!--
-					--><li><a href="#">Holiday</a></li><!--
-					--><li><a href="#">Music</a></li><!--
-					--><li><a href="#">Nature</a></li><!--
-					--><li><a href="#">Other</a></li><!--
-					--><li><a href="#">Scenery</a></li><!--
-					--><li><a href="#">Seasonal</a></li><!--
-					--><li><a href="#">Solid</a></li><!--
-					--><li><a href="#">Sports</a></li><!--
-					--><li><a href="#">Websites</a></li><!--
-					-->
-				   </ul><!--
-			   --></li><!--
-			--><li class="sep"></li><!--
-			--><li><!--
-				--><a class="top-menu" href="#">Themes</a><!--
-				--><ul class="submenu two-col">
-					<!--
-					--><li><a class="em" href="#">Featured</a></li><!--
-					--><li><a class="em" href="#">Most Popular</a></li><!--
-					--><li><a class="em" href="#">Top Rated</a></li><!--
-					
-					--><li><a href="#">Animals</a></li><!--
-					--><li><a href="#">Compact</a></li><!--
-					--><li><a href="#">Large</a></li><!--
-					--><li><a href="#">Modern</a></li><!--
-					--><li><a href="#">Nature</a></li><!--
-					--><li><a href="#">OS Integration</a></li><!--
-					--><li><a href="#">Retro</a></li><!--
-					--><li><a href="#">Sports</a></li><!--
-					--><li><a href="#">Miscellaneous</a></li><!--
-					-->
-				   </ul><!--
-			--></li><!--
-			--><li class="sep"></li><!--
-			--><li><a class="top-menu no-submenu" href="#">Collections</a></li><!--
-			--><li class="sep"></li><!--
-			--><li><!--
-				--><span class="top-menu" href="#">More&hellip;</span><!--
-				--><ul class="submenu">
-					<!--
-					--><li><a href="#">Dictionaries &amp; Language Packs</a></li><!--
-					--><li><a href="#">Plugins</a></li><!--
-					--><li><a href="#">Search Tools</a></li><!--
-					--><li><a href="#">Developer Hub</a></li><!--
-					-->
-				   </ul><!--
-			--></li><!--
-			-->
-		</ul>
-	</nav>
-
-	<form id="site-nav-search">
-		<input type="text" placeholder="Search for Add-ons"></input>
-		<span class="submit">
-			<button class="button install small"><span>Search</span></button>
-		</span>
-	</form>
-	
-	<div id="site-nonfx" class="site-balloon">
-		<b><em></em></b>
-		
-		<h3>Aren't you forgetting something?</h3>
-		
-		<p>
-			To use the thousands of add-ons available here, download 
-			<a href="#">Mozilla Firefox</a>
-			&mdash; a fast, free Web browser.
-		</p>
-	</div>
-	
-	
-	<div id="site-welcome" class="site-balloon">
-		<b><em></em></b>
-		
-		<h3>Welcome to Firefox Add-ons.</h3>
-		
-		<p>
-			Choose from thousands of extra features and styles for Firefox.
-			<a href="#">Learn more&hellip;</a>
-		</p>
-	</div>
-
-	<nav id="site-breadcrumbs">
-		<a href="#">Add-ons</a>
-		<b>&raquo;</b>
-		<a href="#">Extensions</a>
-		<b>&raquo;</b>
-		<span>Add-on Title</span>
-	</nav>
-</div></header>
 
 
 <div id="page-content"><div class="funnel">
@@ -199,8 +30,11 @@
 <div class="secondary-col reversed">
 	<section id="detail-main-sidebar" class="detail-sidebar">
 		<p class="rating"><span class="rating-stars large rating-4"></span></p>
-		<p class="reviews"><a href="#detail-reviews">3,000 user reviews</a></p>
-		<p class="users"><strong>1,234,567</strong> active users</p>
+		<p class="reviews"><a class="anim-scroll" href="#detail-reviews">3,000 user reviews</a></p>
+		<p class="users">
+			<strong>1,234,567</strong> active users
+			<a href="#" class="stats" title="View statistics">Statistics</a>
+		</p>
 	
 		<ul class="actions">
 			<li><a id="detail-addfave" href="#">Add to favorites</a></li>
@@ -214,7 +48,11 @@
 	<section id="detail-main" class="island deep">
 		<header>
 			<span class="icon"></span>
-			<h1>Add-on Title</h1>
+			<h1>
+				Add-on Title
+				<small class="version">1.3.1</small>
+				<span class="no-restart">No Restart</span>
+			</h1>
 			<p class="author">by <a href="">Add-on Author</a></p>
 		</header>
 	
@@ -228,8 +66,8 @@
 				<a id="install-button" class="button install" href="#"><span>Add to Firefox</span></a>
 				<a id="install-button-disabled" class="button install disabled" href="#"><span>Add to Firefox</span></a>
 				<a id="install-button-warning" class="button install warning" href="#"><span>Add to Firefox</span></a>
-				<span class="no-restart">No restart required</span>
-				<a class="privacy show-lightbox" href="#">View privacy Policy</a>
+				<a id="developer-button" class="button developer" href="#"><span>Manage</span></a>
+				<a class="privacy show-lightbox" href="#">Privacy Policy</a>
 			</div>
 
 			<ul class="stop">
@@ -277,7 +115,7 @@
 	<section id="detail-sshots" class="">
 		<h2>Screenshots</h2>
 		
-		<a class="prev" href="#">&laquo;</a>
+		<a class="prev disabled" href="#">&laquo;</a>
 		<a class="next" href="#">&raquo;</a>
 		
 		<ul>
@@ -294,12 +132,14 @@
 <div class="secondary-col reversed">
 	<section id="detail-about-sidebar" class="detail-sidebar">
 		<ul class="links">
-			<li><a class="home" href="#">Add-on home page</a>
-			<li><a class="support" href="#">Support contact</a>
+			<li><a class="home" href="#">Add-on home page</a></li>
+			<li><a class="support" href="#">Support site</a></li>
+			<li><a class="support-mail" href="#">Support contact</a></li>
+			<li><a class="support-gs" href="#">Get Satisfaction</a></li>
 		</ul>
 		
 		<ul class="data">
-			<li class="version">Version 1.0.1</li>
+			<li class="version">Version 1.0.1 <a class="anim-scroll" href="#detail-relnotes">Info</a></li>
 			<li class="date">Updated 2099/12/31</li>
 			<li lass="license">Released under <a href="#">GPLV2</a></li>
 		</ul>
@@ -389,6 +229,10 @@
 		<p class="write">
 			<a class="button small show-lightbox" href="#">Write a Review</a>
 		</p>
+		
+		<p class="abuse">
+			<a href="#" class="show-lightbox">Report abuse</a>
+		</p>
 	</section>
 </div>
 
@@ -447,7 +291,7 @@
 		</div>
 		
 		<div class="more">
-			<a href="#">See all 3,000 user reviews&hellip;</a>
+			<a href="#">See all 3,000 user reviews &raquo;</a>
 		</div>
 	</section>
 </div>
@@ -485,7 +329,7 @@
 <div class="primary-col reversed">
 	<section id="detail-related" class="island">
 		<section id="detail-related-addons" class="island-segment">
-			<h2>Related Add-ons</h2>
+			<h2>Often Used with&hellip;</h2>
 		</section>
 
 		<section id="detail-related-colls" class="island-segment">
@@ -507,7 +351,6 @@
 				<a class="expander" href="#"><b></b></a>
 			</h2>
 			
-			
 			<div class="expandable-content">
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam purus velit, vehicula interdum semper a, fringilla ut sapien. Donec vel lorem sit amet urna dignissim tempus sed sed tortor.
@@ -518,80 +361,89 @@
 				</p>
 			</div>
 		</section>
+
 
 		<section id="detail-relnotes" class="island-segment expandable collapsed">
 			<h2>
-				Release Notes
+				Version Information
 				<a class="expander" href="#"><b></b></a>
 			</h2>
-			
-			<div class="expandable-content">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam purus velit, vehicula interdum semper a, fringilla ut sapien. Donec vel lorem sit amet urna dignissim tempus sed sed tortor.
-				</p>
 
-				<p>
-					In posuere dolor et arcu posuere vitae semper lacus ullamcorper. Curabitur commodo pretium orci, adipiscing fermentum quam luctus non. Duis tincidunt consectetur sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-				</p>
+			<div class="expandable-content">
+				<div class="version">
+					<h3><a href="#">Version 3.1.12</a></h3>
+					<div class="meta">
+						Released Dec 31, 2099 (400K)
+					</div>
+					<div class="meta">
+						For
+						Firefox 3.0 - 4.0.*,
+						Mobile 1.0 - 2.0a1pre,
+						Seamonkey 2.0 - 2.1b2
+					</div>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam purus velit, vehicula interdum semper a, fringilla ut sapien. Donec vel lorem sit amet urna dignissim tempus sed sed tortor. In posuere dolor et arcu posuere vitae semper lacus ullamcorper.
+					<p>
+						Curabitur commodo pretium orci, adipiscing fermentum quam luctus non. Duis tincidunt consectetur sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas id bibendum lectus. Cras blandit bibendum diam non condimentum. Morbi venenatis posuere justo, quis ullamcorper metus tristique eget. Aenean non eros justo.
+					</p>
+					
+					<p>
+						Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam erat volutpat. Nam ut enim odio, at pulvinar felis. Curabitur felis nisi, placerat eu cursus lacinia, auctor eu ipsum. Cras rutrum dictum nibh, vitae scelerisque turpis porttitor et. Quisque nulla sem, luctus ut consequat eu, gravida et ipsum. 
+					</p>
+					
+					<div class="meta">
+						Source code released under <a href="#">GNU General Public License, version 2.0</a>
+					</div>
+				</div>
+					
+				<div class="more">
+					<a href="#">See complete version history &raquo;</a>
+				</div>
 			</div>
 		</section>
 
 
-		<section id="detail-versions" class="island-segment expandable collapsed">
+		<section id="detail-beta" class="island-segment expandable collapsed">
 			<h2>
-				Other Versions
+				Beta Channel
 				<a class="expander" href="#"><b></b></a>
 			</h2>
 
 			<div class="expandable-content">
-				<div class="versions">
-					<div class="version">
-						<h3><a href="#">Version 3.1.12 Beta</a></h3>
-						<div class="date">December 31, 2099</div>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam purus velit, vehicula interdum semper a, fringilla ut sapien. Donec vel lorem sit amet urna dignissim tempus sed sed tortor.
-							<a href="#">more&hellip;</a>
-						</p>
-						<div class="support">
-							Works with:
-							Firefox 3.0 - 4.0.*
-							&middot;
-							Mobile 1.0 - 2.0a1pre
-							&middot;
-							Seamonkey 2.0 - 2.1b2
-						</div>
+				<div class="version">
+					<h3><a href="#">Version 3.5b</a></h3>
 					
-						<div class="go">
-							<a class="button install small" href="#"><span>Add to Firefox</span></a>
-						</div>
+					<div class="meta">
+						Released Dec 31, 2099 (400K)
 					</div>
+					
+					<div class="meta">
+						For
+						Firefox 3.0 - 4.0.*,
+						Mobile 1.0 - 2.0a1pre,
+						Seamonkey 2.0 - 2.1b2
+					</div>
+					
+					<div class="go">
+						<a class="button install warning" href="#"><span>Add to Firefox</span></a>
+					</div>
+					
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam purus velit, vehicula interdum semper a, fringilla ut sapien. Donec vel lorem sit amet urna dignissim tempus sed sed tortor. In posuere dolor et arcu posuere vitae semper lacus ullamcorper.
+					<p>
+						Curabitur commodo pretium orci, adipiscing fermentum quam luctus non. Duis tincidunt consectetur sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas id bibendum lectus. Cras blandit bibendum diam non condimentum. Morbi venenatis posuere justo, quis ullamcorper metus tristique eget. Aenean non eros justo.
+					</p>
 
-					<div class="version">
-						<h3><a href="#">Version 3.0.1</a></h3>
-						<div class="date">January 18, 2099</div>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam purus velit, vehicula interdum semper a, fringilla ut sapien. Donec vel lorem sit amet urna dignissim tempus sed sed tortor.
-							<a href="#">more&hellip;</a>
-						</p>
-						<div class="support">
-							Works with:
-							Firefox 3.0 - 3.6
-							&middot;
-							Mobile 1.0 - 1.1
-							&middot;
-							Seamonkey 2.0 - 2.0.*
-						</div>
-					
-						<div class="go">
-							<a class="button install small" href="#"><span>Download for Windows</span></a>
-							<a class="button install small" href="#"><span>Download for Mac OS X</span></a>
-							<a class="button install small" href="#"><span>Download for Linux</span></a>
-						</div>
-					</div>
+					<p>
+						Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam erat volutpat. Nam ut enim odio, at pulvinar felis. Curabitur felis nisi, placerat eu cursus lacinia, auctor eu ipsum. Cras rutrum dictum nibh, vitae scelerisque turpis porttitor et. Quisque nulla sem, luctus ut consequat eu, gravida et ipsum. 
+					</p>
+
+					<div class="meta">
+						Source code released under <a href="#">GNU General Public License, version 2.0</a>
 				</div>
-
+					
 				<div class="more">
-					<a href="#">See complete version history&hellip;</a>
+					<a href="#">See complete version history &raquo;</a>
 				</div>
 			</div>
 		</section>
@@ -611,11 +463,3 @@
 	<a id="lightbox-close" class="close" href="#">Close</a>
 	<h3>This is the Lightbox Title!</h3>
 </div></div>
-
-
-<script type="text/javascript" src="static/jquery-1.4.3.min.js"></script>
-<script type="text/javascript" src="static/script.js"></script>
-
-</body>
-
-</html>
