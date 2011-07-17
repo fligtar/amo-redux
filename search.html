@@ -70,6 +70,7 @@ featured-exts:
     category: "Search Tools"
     desc: "Adds advanced Google Search capabilities to the Firefox 3 address bar. Supercharge the Awesome Bar with instant search results that appear as you type!"
     author: "Filiberto Mastrocola"
+    incompatible: true
   -
     name: "Pixlr Grabber"
     icon: "featured-03.png"
@@ -83,6 +84,7 @@ featured-exts:
     category: "Bookmarks"
     desc: "NOTE: Xmarks lives! Learn more at http://blog.xmarks.com . Xmarks is the #1 bookmarking add-on. Keep your bookmarks, passwords and open tabs backed up and synchronized &hellip; across computers and browsers."
     author: "Filiberto Mastrocola"
+    slow: true
   -
     name: "Stylish"
     icon: "featured-05.png"
@@ -164,7 +166,11 @@ featured-exts:
 				{% for i in (1..3) %}
 				{% for ext in page.featured-exts %}
 				--><li>
+					{% if ext.incompatible %}
+					<div class="wide-ext incompatible">
+					{% else %}
 					<div class="wide-ext">
+					{% endif %}
 						<p class="icon"><img src="static/img/icons/{{ ext.icon }}" /></p>
 						<p class="title">
 							<a href="detail.html">{{ ext.name }}</a>
@@ -180,8 +186,16 @@ featured-exts:
 							&middot;
 							<span class="users">9,999,999 users</span>
 						</p>
+						{% if ext.slow %}
+							<p class="slow">
+								<span>This add-on can slow down Firefox. <a href="#">Explain&hellip;</a></span>
+							</p>
+						{% endif %}
 						<p class="install">
 							<a class="button small install" href="#"><span>Add to Firefox</span></a>
+							{% if ext.incompatible %}
+							<span class="msg">Not available for Firefox 4.0b5pre</span>
+							{% endif %}
 						</p>
 					</div>
 				</li><!--
