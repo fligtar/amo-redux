@@ -301,6 +301,12 @@ html {
 	.rating-stars.large.rating-2 { background-position: -54px 0; }
 	.rating-stars.large.rating-1 { background-position: -70px 0; }
 
+.main .free {
+    color: #093;
+}
+.main .premium {
+    color: #990000;
+}
 
 .extension {
 	display: block;
@@ -525,9 +531,17 @@ html {
 			background: #093;
 			color: #fff;
 		}
-		.wide-ext p.title .no-restart {
-			background: #e8933a;
-			color: #fff;
+		.wide-ext .no-restart {
+			display: block;
+			margin: 5px 0 0 5px;
+			padding: 0;
+			font-size: 9px;
+			font-family: Arial;
+			font-weight: bold;
+			font-style: normal;
+			line-height: 1;
+			text-transform: uppercase;
+			color: #999;
 		}
 	.wide-ext p.desc {
 		overflow: hidden;
@@ -570,7 +584,7 @@ html {
 		display: block;
 	}
 	
-.wide-ext.incompatible {
+.wide-extension {
 }
 	.wide-ext.incompatible p {
 		opacity: .6;
@@ -1078,7 +1092,15 @@ html {
 	.button.install.disabled span {
 		background-image: url(img/add-disabled.png);
 	}
-
+.button.install.premium {
+	background: -moz-linear-gradient(#E8933A, #FF7F31);
+	color: #fff;
+}
+.button.install.premium span {
+    background: none;
+    padding: 0;
+}
+    
 
 .button.developer {
 	background: -moz-linear-gradient(#f84b4e, #bc2b1a);
@@ -1723,7 +1745,6 @@ html {
 	margin: 0;
 	margin-bottom: 30px;
 	padding: 19px;
-	padding-bottom: 23px;
 	font-family: Georgia;
 	font-size: 14px;
 	color: #666;
@@ -1786,18 +1807,14 @@ html {
 			}
 			#detail-main .no-restart {
 				display: inline-block;
-				margin-left: 6px;
-				padding: 3px 6px;
-				border-radius: 2px;
+				margin: 5px 0 0 5px;
 				font-size: 9px;
 				font-family: Arial;
 				font-weight: bold;
 				font-style: normal;
 				line-height: 1;
 				text-transform: uppercase;
-				background: #e8933a;
-				color: #fff;
-				vertical-align: 3px;
+				color: #999;
 			}
 			#detail-main .privacy {
 			}
@@ -1913,6 +1930,29 @@ html {
 			color: #333;
 		}
 
+#detail-upsell .body,
+#detail-required .body {
+    margin-left: 0;
+    margin-right: 245px;
+    margin-top: 0;
+    min-height: 0;
+}
+#detail-upsell .action {
+    width: 230px;
+}
+#detail-upsell .action p,
+#detail-required p {
+    line-height: 13px;
+    text-align: left;
+}
+#detail-upsell li {
+    list-style: disc;
+    margin: 2px 0 2px 30px;
+}
+#detail-required {
+    background: #fff8dc;
+    border-color: #e2dbbf;
+}
 
 #detail-main-sidebar {
 	margin-top: 20px;
@@ -2755,14 +2795,24 @@ html.contrib #detail-contribute { display: block; }
 html #detail-meet { display: none; }
 html.meet #detail-meet { display: block; }
 
+html #detail-upsell { display: none; }
+html.upsell #detail-upsell { display: block; }
+
+html #detail-required { display: none; }
+html.required #detail-required { display: block; }
+
 html #install-button { }
-html.incompatible #install-button, html.experimental #install-button { display: none; }
+html.incompatible #install-button, html.experimental #install-button,
+html.premium #install-button { display: none; }
 
 html #install-button-disabled { display: none; }
 html.incompatible #install-button-disabled { display: inline-block; }
 
 html #install-button-warning { display: none; }
 html.experimental #install-button-warning { display: inline-block; }
+
+html #install-button-premium { display: none; }
+html.premium #install-button-premium { display: inline-block; }
 
 html #detail-main .stop { display: none; }
 html.incompatible #detail-main .stop { display: block; }

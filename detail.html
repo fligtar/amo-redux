@@ -17,6 +17,9 @@ breadcrumbs: true
 		<a href="#" data-class="no-sshots">No Screenshots</a>
 		<a href="#" data-class="first-run">First Run</a>
 		<a href="#" data-class="owner">Owner</a>
+		<a href="#" data-class="premium">Premium</a>
+		<a href="#" data-class="upsell">Premium Upsell</a>
+		<a href="#" data-class="required">Required Add-ons</a>
 
 		<a href="#" class="close">Close</a>
 	</div></div>
@@ -42,6 +45,8 @@ breadcrumbs: true
 			<li><a id="detail-addcoll" class="show-lightbox" href="#">Add to collection</a></li>
 			<li><a id="detail-share" class="show-lightbox" href="#">Share this add-on</a></li>
 		</ul>
+		
+		<a id="developer-button" class="button developer" href="#"><span>Manage</span></a>
 	</section>
 </div>
 
@@ -52,7 +57,6 @@ breadcrumbs: true
 			<h1>
 				Add-on Title
 				<small class="version">1.3.1</small>
-				<span class="no-restart">No Restart</span>
 			</h1>
 			<p class="author">by <a href="">Add-on Author</a></p>
 		</header>
@@ -67,9 +71,10 @@ breadcrumbs: true
 				<a id="install-button" class="button install" href="#"><span>Add to Firefox</span></a>
 				<a id="install-button-disabled" class="button install disabled" href="#"><span>Add to Firefox</span></a>
 				<a id="install-button-warning" class="button install warning" href="#"><span>Add to Firefox</span></a>
-				<a id="developer-button" class="button developer" href="#"><span>Manage</span></a>
+				<a id="install-button-premium" class="button install premium" href="#"><span>Purchase for $1.99</span></a>
 				<a class="privacy show-lightbox" href="#">Privacy Policy</a>
 			</div>
+			<p><span class="no-restart">Free Install &middot; No Restart Needed</span></p>
 
 			<ul class="stop">
 				<li class="incompatibility">Not available for Firefox 4.0b5pre</li>
@@ -127,8 +132,92 @@ breadcrumbs: true
 			</p>
 		</div>
 	</section>
-</div>
+	
+	<section id="detail-required" class="island detail-contribute">
+		<div class="body">
+			<h2>This add-on requires the following add-ons to work properly:</h2>
+		</div>
+		    
+		<div class="extension">
+    	    <div class="main">
+        		<p class="icon"><img src="static/img/icons/featured-01.png" /></p>
+        		<p class="title"><a href="detail.html">Password Exporter Pro</a></p>
+        		<p class="category">Security &amp; Privacy</p>
+        		<p class="rating"><span class="rating-stars rating-4"></span> &middot; <span class="premium">$1.99</span></p>
+        	</div>
 
+        	<div class="more">
+        		<div class="install">
+        			<a class="button small install" href="#"><span>Add to Firefox</span></a>
+        		</div>
+
+        		<div class="desc">
+        			<p>
+        				Preview and navigate tab contents through popup.
+        			</p>
+        		</div>
+
+        		<div class="author">
+        			by <a href="#">Filiberto Mastrocola</a>
+        		</div>
+
+        		<div class="meta">
+        			<p class="users">
+        				9,999,999 users
+        			</p>
+        		</div>
+        	</div>
+        </div>
+	</section>
+	
+	<section id="detail-upsell" class="island detail-contribute">
+		<div class="body">
+			<h2>Premium version available</h2>
+
+			<p>
+				All of the free features, plus:
+				<ul>
+				    <li>no advertisements!</li>
+				    <li>export an unlimited number of passwords</li>
+				    <li>sometimes it actually works
+				</ul>
+			</p>
+		</div>
+
+		<div class="action">
+		    <div class="extension">
+            	<div class="main">
+            		<p class="icon"><img src="static/img/icons/featured-01.png" /></p>
+            		<p class="title"><a href="detail.html">Password Exporter Pro</a></p>
+            		<p class="category">Security &amp; Privacy</p>
+            		<p class="rating"><span class="rating-stars rating-4"></span> &middot; <span class="premium">$1.99</span></p>
+            	</div>
+
+            	<div class="more">
+            		<div class="install">
+            			<a class="button small install" href="#"><span>Add to Firefox</span></a>
+            		</div>
+
+            		<div class="desc">
+            			<p>
+            				Preview and navigate tab contents through popup.
+            			</p>
+            		</div>
+
+            		<div class="author">
+            			by <a href="#">Filiberto Mastrocola</a>
+            		</div>
+
+            		<div class="meta">
+            			<p class="users">
+            				9,999,999 users
+            			</p>
+            		</div>
+            	</div>
+            </div>
+		</div>
+	</section>
+</div>
 
 <div class="">
 	<section id="detail-sshots" class="">

@@ -177,7 +177,6 @@ featured-exts:
 							<span class="author">by {{ ext.author }}</span>
 							{% if i == 1 %}
 							{% if ext.featured %}<span class="featured">Featured</span>{% endif %}
-							{% if ext.restartless %}<span class="no-restart">No Restart</span>{% endif %}
 							{% endif %}
 						</p>
 						<p class="desc">{{ ext.desc }}</p>
@@ -193,6 +192,7 @@ featured-exts:
 						{% endif %}
 						<p class="install">
 							<a class="button small install" href="#"><span>Add to Firefox</span></a>
+							{% if ext.restartless %}<span class="no-restart">Free Install<br/>No Restart Needed</span>{% endif %}
 							{% if ext.incompatible %}
 							<span class="msg">Not available for Firefox 4.0b5pre</span>
 							{% endif %}
