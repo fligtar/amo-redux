@@ -160,6 +160,14 @@
 		
 		$('#site-nav-search input').searchSuggestions('#site-search-suggestions');
 		
+		if (window.location.href.indexOf('?premium') !== -1) {
+	        $('#proto-controls a[data-class="premium"]').click();
+	        $('#proto-controls a[data-class="required"]').click();
+	    }
+	    if (window.location.href.indexOf('?free') !== -1) {
+	        $('#proto-controls a[data-class="upsell"]').click();
+	    }
+		
 		setTimeout(function() {
 			$('#proto-controls').removeClass('initial');
 		}, 1000);

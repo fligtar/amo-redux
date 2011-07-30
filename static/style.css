@@ -1816,6 +1816,9 @@ html {
 				text-transform: uppercase;
 				color: #999;
 			}
+			#detail-main .no-restart a {
+			    color: #999;
+			}
 			#detail-main .privacy {
 			}
 			#detail-main #developer-button {
@@ -2813,6 +2816,9 @@ html.experimental #install-button-warning { display: inline-block; }
 
 html #install-button-premium { display: none; }
 html.premium #install-button-premium { display: inline-block; }
+html .actions .no-restart .premium { display: none; }
+html.premium .actions .no-restart .premium { display: inline; }
+html.premium .actions .no-restart .free { display: none; }
 
 html #detail-main .stop { display: none; }
 html.incompatible #detail-main .stop { display: block; }
