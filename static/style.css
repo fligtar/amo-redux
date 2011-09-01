@@ -2,7 +2,7 @@
 @font-face {
 	font-family: MetaBlack;
 	font-weight: bold;
-	src: url(https://www.mozilla.com/img/fonts/MetaWebPro-Black.woff) format('woff');
+	src: url(https://www.mozilla.org/img/fonts/MetaWebPro-Black.woff) format('woff');
 }
 
 
@@ -301,11 +301,13 @@ html {
 	.rating-stars.large.rating-2 { background-position: -54px 0; }
 	.rating-stars.large.rating-1 { background-position: -70px 0; }
 
-.main .free {
+.main .free,
+.wide-ext .free {
     color: #093;
 }
-.main .premium {
-    color: #990000;
+.main .premium,
+.wide-ext .premium {
+    color: #D16B00;
 }
 
 .extension {
@@ -557,7 +559,8 @@ html {
 			vertical-align: middle;
 		}
 		.wide-ext .users {
-			color: #093;
+			/*color: #093;*/
+			color: #999;
 		}
 	.wide-ext p.slow {
 		margin-top: 10px;
@@ -1805,7 +1808,9 @@ html {
 			#detail-main .privacy {
 				margin-left: 14px;
 			}
-			#detail-main .no-restart {
+			#detail-main .no-restart,
+			.more .install .no-restart,
+			.wide-ext .install .no-restart {
 				display: inline-block;
 				margin: 5px 0 0 5px;
 				font-size: 9px;
@@ -1816,8 +1821,14 @@ html {
 				text-transform: uppercase;
 				color: #999;
 			}
-			#detail-main .no-restart a {
+			#detail-main .no-restart a,
+			.more .install .no-restart a,
+			.wide-ext .install .no-restart a {
 			    color: #999;
+			}
+			.more .install .no-restart,
+			.wide-ext .install .no-restart {
+			    display: block;
 			}
 			#detail-main .privacy {
 			}

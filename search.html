@@ -78,6 +78,7 @@ featured-exts:
     desc: "Grabbing screens and pulling images from the web just got a bit easier. With the Pixlr Grabber add-on, you can copy, save, share or even edit your final grabs - including any image or &hellip; background - with just a right-click."
     author: "Filiberto Mastrocola"
     featured: true
+    premium: true
   -
     name: "Xmarks Sync"
     icon: "featured-04.png"
@@ -93,6 +94,7 @@ featured-exts:
     author: "Filiberto Mastrocola"
     restartless: true
     featured: true
+    premium: true
   -
     name: "Search Tabs - get Facebook, Gmail&#x2122;, Dropbox, LinkedIn on Go&hellip;"
     icon: "featured-06.png"
@@ -183,6 +185,8 @@ featured-exts:
 						<p class="meta">
 							<span class="rating-stars rating-4"></span> (30)
 							&middot;
+							{% if ext.premium %}<span class="premium">$1.99</span>{% else %}<span class="free">FREE</span>{% endif %}
+							&middot;
 							<span class="users">9,999,999 users</span>
 						</p>
 						{% if ext.slow %}
@@ -191,8 +195,13 @@ featured-exts:
 							</p>
 						{% endif %}
 						<p class="install">
-							<a class="button small install" href="#"><span>Add to Firefox</span></a>
-							{% if ext.restartless %}<span class="no-restart">Free Install<br/>No Restart Needed</span>{% endif %}
+						    {% if ext.premium %}
+						        <a class="button small install premium" href="#"><span>Purchase for $1.99</span></a>
+						        <span class="no-restart"><a href="#">Learn about Purchasing</a></span>
+						    {% else %}
+						        <a class="button small install" href="#"><span>Add to Firefox</span></a>
+						    {% endif %}
+							{% if ext.restartless %}<span class="no-restart">No Restart Needed</span>{% endif %}
 							{% if ext.incompatible %}
 							<span class="msg">Not available for Firefox 4.0b5pre</span>
 							{% endif %}
