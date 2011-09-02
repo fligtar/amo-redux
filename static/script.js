@@ -167,6 +167,28 @@
 	    if (window.location.href.indexOf('?free') !== -1) {
 	        $('#proto-controls a[data-class="upsell"]').click();
 	    }
+	    
+	    $('#search-facets2 h3 > a').click(function() {
+	        var li = $(this).closest('li');
+	        if (li.hasClass('open'))
+	            li.removeClass('open');
+	        else {
+	            $('.facet').removeClass('open');
+	            li.addClass('open');
+	        }
+	        return false;
+	    });
+	    $('#search-facets2 .options a').click(function() {
+	        var li = $(this).closest('.facet');
+	        $('.facet').removeClass('open');
+	        var index = typeof $(this).closest('ul').data('index') == 'undefined' ? 0 : $(this).closest('ul').data('index');
+	        li.find('strong:eq(' + index + ')').addClass('changed').text($(this).text());
+	        li.find('.selected:eq(' + index + ')').removeClass('selected');
+	        $(this).closest('li').addClass('selected');
+	        
+	        $('.pages').addClass('loading');
+	        return false;
+	    });
 		
 		setTimeout(function() {
 			$('#proto-controls').removeClass('initial');

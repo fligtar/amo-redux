@@ -120,7 +120,7 @@ featured-exts:
 <div id="page-content"><div class="funnel">
 
 
-{% include facets.html %}
+{% include facets2.html %}
 
 
 <div class="primary-col">
@@ -148,7 +148,7 @@ featured-exts:
 					</optgroup>
 				</select>
 			</form>
-
+			
 			<div class="sorter">
 				Sort by:<!--
 				--><ul><!--
@@ -212,6 +212,11 @@ featured-exts:
 				{% endfor %}
 				-->
 			</ul>
+			
+			<div class="loading-msg">
+			    <h1>Updating results...</h1>
+			    <img src="static/img/bigloader.gif"/>
+			</div>
 		</div>
 	</section>
 

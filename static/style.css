@@ -2575,7 +2575,127 @@ html {
 				display: none;
 			}
 
+#search-facets2 h1 {
+    font-family: georgia;
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+#search-facets2 > ul {
+    border: 1px solid #D7D9E8;
+    box-shadow: 0 -2px 0 #DFECF8 inset, 0 2px 0 rgba(0, 0, 0, 0.05);
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 6px;
+    font-family: "Helvetica Neue";
+}
+#search-facets2 > ul > li {
+    border-top: 1px dotted #D7D9E8;
+    position: relative;
+}
+#search-facets2 > ul > li:hover {
+    background: rgba(255, 255, 255, 0.75);
+}
+#search-facets2 > ul > li:first-child:hover {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+#search-facets2 > ul > li:last-child:hover {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+#search-facets2 > ul > li a,
+#search-facets2 > ul > li:hover a {
+    text-decoration: none;
+}
+#search-facets2 > ul > li:first-child {
+    border-top: none;
+}
+#search-facets2 > ul > li > h3 > a {
+    display: block;
+    font-family: georgia;
+    font-style: italic;
+    color: #666;
+    padding: 10px 5px;
+}
+#search-facets2 > ul > li > h3 > a:after {
+    content: "»";
+    font-size: 17px;
+    font-style: normal;
+    right: 5px;
+    top: 14px;
+    position: absolute;
+    color: #999;
+}
+#search-facets2 > ul > li.open > h3 > a:after {
+    -moz-transform: rotate(90deg);
+    top: 6px;
+}
+#search-facets2 > ul > li a strong {
+    font-style: normal;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    color: #447BC4;
+    display: block;
+    margin: 3px 0 0 10px;
+    font-size: 12px;
+}
+#search-facets2 > ul > li a strong.changed {
+    color: #D16B00;
+}
+#search-facets2 > ul > li.open a strong {
+    display: none;
+}
+#search-facets2 > ul > li .options {
+    font-size: 12px;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    margin-bottom: 5px;
+}
+#search-facets2 > ul > li.open .options {
+    display: block;
+}
+#search-facets2 > ul > li .selected a {
+    color: #D16B00;
+    font-weight: bold;
+}
+#search-facets2 > ul > li ul {
+    margin-left: 10px;
+}
+#search-facets2 > ul > li li {
+    margin: 4px 0;
+}
+#search-facets2 > ul > li .options > ul > li:first-child {
+    margin-top: -2px;
+}
+#search-facets2 p {
+    text-align: center;
+    font-family: georgia;
+    font-style: italic;
+    color: #666;
+}
 
+.pages.loading .page {
+    opacity: 0.2;
+}
+.pages .loading-msg {
+    display: none;
+    z-index: 1000;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 200px;
+}
+.pages .loading-msg h1 {
+    color: #666;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.pages.loading .loading-msg {
+    display: block;
+}
 
 .page-overlay {
 	position: fixed;
